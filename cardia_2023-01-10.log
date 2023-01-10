@@ -1,0 +1,747 @@
+2023-01-10 10:20:17,094 [1] INFO  MGT.Cardia.Program - Starting Cardia
+2023-01-10 10:20:18,454 [1] DEBUG MGT.Cardia.BtHrpBundle - Retrieving heart rate capable devices
+2023-01-10 10:20:18,482 [1] DEBUG MGT.Cardia.BtHrpBundle - Attempting to retrieve async result...
+2023-01-10 10:20:18,584 [1] DEBUG MGT.Cardia.BtHrpBundle - Found 0 heart rate capable deices
+2023-01-10 10:20:19,866 [1] INFO  MGT.Cardia.Program - Starting Cardia
+2023-01-10 10:20:19,984 [1] DEBUG MGT.Cardia.BtHrpBundle - Retrieving heart rate capable devices
+2023-01-10 10:20:20,005 [1] DEBUG MGT.Cardia.BtHrpBundle - Attempting to retrieve async result...
+2023-01-10 10:20:20,118 [1] DEBUG MGT.Cardia.BtHrpBundle - Found 0 heart rate capable deices
+2023-01-10 10:27:51,758 [1] INFO  MGT.Cardia.Program - Starting Cardia
+2023-01-10 10:27:51,872 [1] DEBUG MGT.Cardia.BtHrpBundle - Retrieving heart rate capable devices
+2023-01-10 10:27:51,892 [1] DEBUG MGT.Cardia.BtHrpBundle - Attempting to retrieve async result...
+2023-01-10 10:27:52,008 [1] DEBUG MGT.Cardia.BtHrpBundle - Found 1 heart rate capable deices
+2023-01-10 10:27:52,011 [1] DEBUG MGT.Cardia.BtHrpBundle - Polar H10 BAB23A27: id = \\?\BTHLEDevice#{0000180d-0000-1000-8000-00805f9b34fb}_Dev_MA&Polar_Electro_Oy_MO&H10_FW&5.0.0_cc5c77f95fbe#8&15b48b6e&0&000e#{6e3bb679-4372-40c8-9eaa-4509df260cd8}, default = False, enabled = True,  paired = False
+2023-01-10 10:28:05,011 [1] DEBUG MGT.HRM.HRP.BtHrp - Starting HRP
+2023-01-10 10:28:05,019 [1] DEBUG MGT.HRM.HRP.BtHrp - Getting GattDeviceService Polar H10 BAB23A27 with id \\?\BTHLEDevice#{0000180d-0000-1000-8000-00805f9b34fb}_Dev_MA&Polar_Electro_Oy_MO&H10_FW&5.0.0_cc5c77f95fbe#8&15b48b6e&0&000e#{6e3bb679-4372-40c8-9eaa-4509df260cd8}
+2023-01-10 10:28:05,674 [1] DEBUG MGT.HRM.HRP.BtHrp - GattDeviceService instatiated successfully
+2023-01-10 10:28:05,676 [1] DEBUG MGT.HRM.HRP.BtHrp - GattSession status = Closed, mantain connection = False, can mantain connection = False
+2023-01-10 10:28:05,676 [1] DEBUG MGT.HRM.HRP.BtHrp - Getting all GattCharacteristic...
+2023-01-10 10:28:05,694 [1] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristicsResult status Success
+2023-01-10 10:28:05,694 [1] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic 00002a37-0000-1000-8000-00805f9b34fb: description = , protection level = Plain
+2023-01-10 10:28:05,695 [1] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic 00002a38-0000-1000-8000-00805f9b34fb: description = , protection level = Plain
+2023-01-10 10:28:05,695 [1] DEBUG MGT.HRM.HRP.BtHrp - Getting HeartRateMeasurement GattCharacteristic 0
+2023-01-10 10:28:05,698 [1] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristicsResult status Success
+2023-01-10 10:28:05,698 [1] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic 00002a37-0000-1000-8000-00805f9b34fb: description = , protection level = Plain
+2023-01-10 10:28:05,699 [1] DEBUG MGT.HRM.HRP.BtHrp - Setting EncryptionRequired protection level on GattCharacteristic
+2023-01-10 10:28:06,207 [1] DEBUG MGT.HRM.HRP.BtHrp - Registering event handler onction level on GattCharacteristic
+2023-01-10 10:28:06,208 [1] DEBUG MGT.HRM.HRP.BtHrp - Reading GattCharacteristic configuration descriptor
+2023-01-10 10:28:06,213 [1] DEBUG MGT.HRM.HRP.BtHrp - Setting GattCharacteristic configuration descriptor to enable notifications
+2023-01-10 10:28:07,599 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:28:07,601 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:28:07,601 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 83 ]
+2023-01-10 10:28:07,603 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:28:08,555 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:28:08,556 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:28:08,556 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 83 ]
+2023-01-10 10:28:08,556 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:28:08,557 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 83 ]
+2023-01-10 10:28:09,575 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:28:09,576 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:28:09,576 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 83 ]
+2023-01-10 10:28:09,577 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:28:09,577 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 83 ]
+2023-01-10 10:28:10,596 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:28:10,597 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:28:10,599 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 83 ]
+2023-01-10 10:28:10,599 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:28:10,600 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 83 ]
+2023-01-10 10:28:11,556 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:28:11,557 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:28:11,558 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 82 ]
+2023-01-10 10:28:11,559 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:28:11,560 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 82 ]
+2023-01-10 10:28:12,575 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:28:12,576 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:28:12,577 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 82 ]
+2023-01-10 10:28:12,577 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:28:12,578 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 82 ]
+2023-01-10 10:28:13,595 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:28:13,597 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:28:13,598 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 83 ]
+2023-01-10 10:28:13,599 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:28:13,600 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 83 ]
+2023-01-10 10:28:14,555 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:28:14,555 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:28:14,555 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 86 ]
+2023-01-10 10:28:14,556 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:28:14,556 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 86 ]
+2023-01-10 10:28:15,576 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:28:15,577 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:28:15,578 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 86 ]
+2023-01-10 10:28:15,579 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:28:15,580 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 86 ]
+2023-01-10 10:28:16,595 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:28:16,597 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:28:16,598 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 87 ]
+2023-01-10 10:28:16,599 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:28:16,600 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 87 ]
+2023-01-10 10:28:17,555 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:28:17,557 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:28:17,558 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 90 ]
+2023-01-10 10:28:17,559 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:28:17,560 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 90 ]
+2023-01-10 10:28:18,634 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:28:18,636 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:28:18,637 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 92 ]
+2023-01-10 10:28:18,637 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:28:18,638 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 92 ]
+2023-01-10 10:28:19,594 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:28:19,595 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:28:19,595 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 93 ]
+2023-01-10 10:28:19,596 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:28:19,596 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 93 ]
+2023-01-10 10:28:20,555 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:28:20,555 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:28:20,555 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 95 ]
+2023-01-10 10:28:20,556 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:28:20,556 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 95 ]
+2023-01-10 10:28:21,575 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:28:21,576 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:28:21,577 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 96 ]
+2023-01-10 10:28:21,578 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:28:21,579 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 96 ]
+2023-01-10 10:28:22,596 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:28:22,597 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:28:22,598 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 96 ]
+2023-01-10 10:28:22,599 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:28:22,600 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 96 ]
+2023-01-10 10:28:23,554 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:28:23,555 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:28:23,555 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 94 ]
+2023-01-10 10:28:23,556 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:28:23,556 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 94 ]
+2023-01-10 10:28:24,575 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:28:24,575 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:28:24,576 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 90 ]
+2023-01-10 10:28:24,576 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:28:24,576 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 90 ]
+2023-01-10 10:28:25,595 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:28:25,596 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:28:25,596 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 89 ]
+2023-01-10 10:28:25,597 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:28:25,597 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 89 ]
+2023-01-10 10:28:26,556 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:28:26,557 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:28:26,558 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 89 ]
+2023-01-10 10:28:26,559 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:28:26,559 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 89 ]
+2023-01-10 10:28:27,575 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:28:27,576 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:28:27,577 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 87 ]
+2023-01-10 10:28:27,578 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:28:27,580 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 87 ]
+2023-01-10 10:28:28,595 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:28:28,595 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:28:28,596 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 86 ]
+2023-01-10 10:28:28,596 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:28:28,596 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 86 ]
+2023-01-10 10:28:29,556 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:28:29,557 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:28:29,558 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 84 ]
+2023-01-10 10:28:29,559 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:28:29,560 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 84 ]
+2023-01-10 10:28:30,575 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:28:30,576 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:28:30,576 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 83 ]
+2023-01-10 10:28:30,577 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:28:30,577 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 83 ]
+2023-01-10 10:28:31,655 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:28:31,655 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:28:31,656 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 83 ]
+2023-01-10 10:28:31,656 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:28:31,656 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 83 ]
+2023-01-10 10:28:32,555 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:28:32,557 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:28:32,558 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 83 ]
+2023-01-10 10:28:32,559 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:28:32,560 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 83 ]
+2023-01-10 10:28:33,575 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:28:33,575 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:28:33,576 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 82 ]
+2023-01-10 10:28:33,576 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:28:33,576 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 82 ]
+2023-01-10 10:28:34,595 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:28:34,596 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:28:34,596 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 81 ]
+2023-01-10 10:28:34,596 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:28:34,597 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 81 ]
+2023-01-10 10:28:35,555 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:28:35,556 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:28:35,557 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 80 ]
+2023-01-10 10:28:35,557 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:28:35,558 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 80 ]
+2023-01-10 10:28:36,710 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:28:36,710 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:28:36,711 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 80 ]
+2023-01-10 10:28:36,711 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:28:36,711 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 80 ]
+2023-01-10 10:28:37,701 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:28:37,702 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:28:37,703 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 80 ]
+2023-01-10 10:28:37,705 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:28:37,706 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 80 ]
+2023-01-10 10:28:38,690 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:28:38,692 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:28:38,693 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 80 ]
+2023-01-10 10:28:38,694 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:28:38,695 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 80 ]
+2023-01-10 10:28:39,680 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:28:39,681 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:28:39,682 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 79 ]
+2023-01-10 10:28:39,683 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:28:39,684 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 79 ]
+2023-01-10 10:28:41,660 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:28:41,662 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:28:41,663 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 78 ]
+2023-01-10 10:28:41,664 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:28:41,665 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 78 ]
+2023-01-10 10:28:41,666 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:28:41,667 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:28:41,667 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 78 ]
+2023-01-10 10:28:41,667 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:28:41,667 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 78 ]
+2023-01-10 10:28:42,651 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:28:42,652 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:28:42,653 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 79 ]
+2023-01-10 10:28:42,654 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:28:42,655 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 79 ]
+2023-01-10 10:28:43,640 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:28:43,641 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:28:43,641 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 80 ]
+2023-01-10 10:28:43,642 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:28:43,643 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 80 ]
+2023-01-10 10:28:44,629 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:28:44,630 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:28:44,630 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 80 ]
+2023-01-10 10:28:44,630 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:28:44,631 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 80 ]
+2023-01-10 10:28:45,620 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:28:45,622 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:28:45,623 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 79 ]
+2023-01-10 10:28:45,624 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:28:45,624 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 79 ]
+2023-01-10 10:28:46,610 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:28:46,612 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:28:46,613 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 78 ]
+2023-01-10 10:28:46,614 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:28:46,615 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 78 ]
+2023-01-10 10:28:47,600 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:28:47,601 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:28:47,602 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 77 ]
+2023-01-10 10:28:47,603 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:28:47,604 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 77 ]
+2023-01-10 10:28:48,589 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:28:48,590 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:28:48,590 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 76 ]
+2023-01-10 10:28:48,591 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:28:48,591 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 76 ]
+2023-01-10 10:28:49,580 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:28:49,580 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:28:49,581 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 76 ]
+2023-01-10 10:28:49,581 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:28:49,582 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 76 ]
+2023-01-10 10:28:50,569 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:28:50,569 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:28:50,570 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 76 ]
+2023-01-10 10:28:50,570 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:28:50,570 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 76 ]
+2023-01-10 10:28:51,561 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:28:51,562 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:28:51,563 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 76 ]
+2023-01-10 10:28:51,565 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:28:51,566 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 76 ]
+2023-01-10 10:28:52,549 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:28:52,549 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:28:52,550 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 77 ]
+2023-01-10 10:28:52,550 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:28:52,550 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 77 ]
+2023-01-10 10:28:54,035 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:28:54,037 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:28:54,038 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 77 ]
+2023-01-10 10:28:54,039 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:28:54,040 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 77 ]
+2023-01-10 10:28:55,025 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:28:55,026 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:28:55,026 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 76 ]
+2023-01-10 10:28:55,026 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:28:55,027 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 76 ]
+2023-01-10 10:28:56,015 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:28:56,017 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:28:56,018 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 76 ]
+2023-01-10 10:28:56,019 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:28:56,020 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 76 ]
+2023-01-10 10:28:57,005 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:28:57,006 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:28:57,007 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 75 ]
+2023-01-10 10:28:57,007 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:28:57,008 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 75 ]
+2023-01-10 10:28:57,995 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:28:57,995 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:28:57,996 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 75 ]
+2023-01-10 10:28:57,996 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:28:57,996 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 75 ]
+2023-01-10 10:28:58,985 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:28:58,986 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:28:58,986 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 76 ]
+2023-01-10 10:28:58,986 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:28:58,987 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 76 ]
+2023-01-10 10:28:59,975 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:28:59,976 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:28:59,976 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 76 ]
+2023-01-10 10:28:59,977 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:28:59,977 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 76 ]
+2023-01-10 10:29:00,964 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:29:00,965 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:29:00,966 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 76 ]
+2023-01-10 10:29:00,967 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:29:00,968 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 76 ]
+2023-01-10 10:29:01,955 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:29:01,957 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:29:01,958 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 75 ]
+2023-01-10 10:29:01,959 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:29:01,959 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 75 ]
+2023-01-10 10:29:02,945 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:29:02,945 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:29:02,946 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 75 ]
+2023-01-10 10:29:02,946 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:29:02,947 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 75 ]
+2023-01-10 10:29:03,935 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:29:03,936 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:29:03,937 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 75 ]
+2023-01-10 10:29:03,938 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:29:03,939 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 75 ]
+2023-01-10 10:29:04,925 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:29:04,926 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:29:04,926 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 75 ]
+2023-01-10 10:29:04,926 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:29:04,927 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 75 ]
+2023-01-10 10:29:05,915 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:29:05,916 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:29:05,917 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 76 ]
+2023-01-10 10:29:05,918 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:29:05,919 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 76 ]
+2023-01-10 10:29:06,905 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:29:06,905 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:29:06,906 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 75 ]
+2023-01-10 10:29:06,906 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:29:06,906 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 75 ]
+2023-01-10 10:29:08,885 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:29:08,885 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:29:08,886 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 75 ]
+2023-01-10 10:29:08,886 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:29:08,886 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 75 ]
+2023-01-10 10:29:08,946 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:29:08,947 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:29:08,947 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 75 ]
+2023-01-10 10:29:08,948 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:29:08,948 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 75 ]
+2023-01-10 10:29:09,874 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:29:09,875 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:29:09,876 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 76 ]
+2023-01-10 10:29:09,877 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:29:09,878 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 76 ]
+2023-01-10 10:29:10,865 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:29:10,865 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:29:10,866 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 76 ]
+2023-01-10 10:29:10,866 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:29:10,866 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 76 ]
+2023-01-10 10:29:11,855 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:29:11,856 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:29:11,857 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 78 ]
+2023-01-10 10:29:11,859 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:29:11,860 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 78 ]
+2023-01-10 10:29:12,844 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:29:12,845 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:29:12,845 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 78 ]
+2023-01-10 10:29:12,845 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:29:12,846 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 78 ]
+2023-01-10 10:29:13,836 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:29:13,837 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:29:13,838 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 77 ]
+2023-01-10 10:29:13,840 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:29:13,841 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 77 ]
+2023-01-10 10:29:14,825 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:29:14,826 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:29:14,827 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 77 ]
+2023-01-10 10:29:14,828 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:29:14,829 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 77 ]
+2023-01-10 10:29:15,815 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:29:15,815 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:29:15,816 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 76 ]
+2023-01-10 10:29:15,816 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:29:15,816 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 76 ]
+2023-01-10 10:29:16,805 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:29:16,806 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:29:16,807 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 75 ]
+2023-01-10 10:29:16,809 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:29:16,810 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 75 ]
+2023-01-10 10:29:17,795 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:29:17,796 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:29:17,796 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 73 ]
+2023-01-10 10:29:17,797 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:29:17,798 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 73 ]
+2023-01-10 10:29:18,784 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:29:18,786 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:29:18,787 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 73 ]
+2023-01-10 10:29:18,788 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:29:18,788 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 73 ]
+2023-01-10 10:29:19,774 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:29:19,776 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:29:19,777 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 74 ]
+2023-01-10 10:29:19,778 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:29:19,779 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 74 ]
+2023-01-10 10:29:20,765 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:29:20,767 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:29:20,768 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 74 ]
+2023-01-10 10:29:20,769 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:29:20,770 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 74 ]
+2023-01-10 10:29:21,755 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:29:21,756 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:29:21,757 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 75 ]
+2023-01-10 10:29:21,758 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:29:21,760 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 75 ]
+2023-01-10 10:29:22,745 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:29:22,746 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:29:22,746 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 74 ]
+2023-01-10 10:29:22,747 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:29:22,747 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 74 ]
+2023-01-10 10:29:23,735 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:29:23,735 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:29:23,735 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 73 ]
+2023-01-10 10:29:23,736 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:29:23,736 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 73 ]
+2023-01-10 10:29:24,725 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:29:24,726 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:29:24,727 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 74 ]
+2023-01-10 10:29:24,728 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:29:24,729 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 74 ]
+2023-01-10 10:29:25,715 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:29:25,715 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:29:25,715 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 74 ]
+2023-01-10 10:29:25,716 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:29:25,716 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 74 ]
+2023-01-10 10:29:26,705 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:29:26,706 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:29:26,706 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 74 ]
+2023-01-10 10:29:26,706 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:29:26,707 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 74 ]
+2023-01-10 10:29:27,694 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:29:27,695 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:29:27,695 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 74 ]
+2023-01-10 10:29:27,695 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:29:27,695 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 74 ]
+2023-01-10 10:29:28,685 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:29:28,685 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:29:28,686 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 74 ]
+2023-01-10 10:29:28,686 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:29:28,686 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 74 ]
+2023-01-10 10:29:29,675 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:29:29,676 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:29:29,677 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 75 ]
+2023-01-10 10:29:29,678 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:29:29,679 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 75 ]
+2023-01-10 10:29:30,665 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:29:30,666 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:29:30,667 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 80 ]
+2023-01-10 10:29:30,667 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:29:30,668 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 80 ]
+2023-01-10 10:29:31,655 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:29:31,656 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:29:31,657 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 81 ]
+2023-01-10 10:29:31,658 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:29:31,659 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 81 ]
+2023-01-10 10:29:32,645 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:29:32,647 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:29:32,648 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 82 ]
+2023-01-10 10:29:32,649 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:29:32,650 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 82 ]
+2023-01-10 10:29:33,635 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:29:33,636 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:29:33,637 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 82 ]
+2023-01-10 10:29:33,638 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:29:33,639 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 82 ]
+2023-01-10 10:29:34,624 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:29:34,625 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:29:34,625 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 81 ]
+2023-01-10 10:29:34,626 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:29:34,626 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 81 ]
+2023-01-10 10:29:35,614 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:29:35,615 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:29:35,615 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 80 ]
+2023-01-10 10:29:35,616 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:29:35,616 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 80 ]
+2023-01-10 10:29:36,604 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:29:36,605 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:29:36,605 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 78 ]
+2023-01-10 10:29:36,605 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:29:36,606 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 78 ]
+2023-01-10 10:29:37,594 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:29:37,594 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:29:37,595 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 76 ]
+2023-01-10 10:29:37,595 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:29:37,595 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 76 ]
+2023-01-10 10:29:38,585 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:29:38,586 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:29:38,586 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 76 ]
+2023-01-10 10:29:38,587 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:29:38,587 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 76 ]
+2023-01-10 10:29:39,575 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:29:39,577 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:29:39,578 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 75 ]
+2023-01-10 10:29:39,579 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:29:39,580 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 75 ]
+2023-01-10 10:29:40,564 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:29:40,565 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:29:40,565 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 76 ]
+2023-01-10 10:29:40,566 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:29:40,566 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 76 ]
+2023-01-10 10:29:41,554 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:29:41,556 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:29:41,557 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 76 ]
+2023-01-10 10:29:41,558 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:29:41,559 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 76 ]
+2023-01-10 10:29:42,546 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:29:42,547 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:29:42,548 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 77 ]
+2023-01-10 10:29:42,549 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:29:42,551 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 77 ]
+2023-01-10 10:29:44,030 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:29:44,031 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:29:44,032 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 77 ]
+2023-01-10 10:29:44,033 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:29:44,034 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 77 ]
+2023-01-10 10:29:45,019 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:29:45,020 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:29:45,020 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 76 ]
+2023-01-10 10:29:45,021 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:29:45,021 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 76 ]
+2023-01-10 10:29:46,010 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:29:46,011 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:29:46,011 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 75 ]
+2023-01-10 10:29:46,011 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:29:46,012 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 75 ]
+2023-01-10 10:29:46,999 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:29:47,001 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:29:47,001 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 75 ]
+2023-01-10 10:29:47,001 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:29:47,002 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 75 ]
+2023-01-10 10:29:47,990 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:29:47,990 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:29:47,991 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 75 ]
+2023-01-10 10:29:47,991 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:29:47,991 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 75 ]
+2023-01-10 10:29:48,981 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:29:48,982 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:29:48,983 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 75 ]
+2023-01-10 10:29:48,984 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:29:48,985 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 75 ]
+2023-01-10 10:29:49,970 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:29:49,971 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:29:49,971 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 74 ]
+2023-01-10 10:29:49,972 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:29:49,972 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 74 ]
+2023-01-10 10:29:50,959 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:29:50,960 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:29:50,960 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 74 ]
+2023-01-10 10:29:50,960 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:29:50,960 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 74 ]
+2023-01-10 10:29:51,950 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:29:51,952 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:29:51,953 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 73 ]
+2023-01-10 10:29:51,954 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:29:51,955 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 73 ]
+2023-01-10 10:29:52,940 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:29:52,940 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:29:52,941 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 73 ]
+2023-01-10 10:29:52,941 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:29:52,941 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 73 ]
+2023-01-10 10:29:53,930 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:29:53,930 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:29:53,931 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 74 ]
+2023-01-10 10:29:53,931 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:29:53,931 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 74 ]
+2023-01-10 10:29:54,920 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:29:54,921 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:29:54,922 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 75 ]
+2023-01-10 10:29:54,923 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:29:54,924 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 75 ]
+2023-01-10 10:29:55,910 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:29:55,911 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:29:55,911 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 76 ]
+2023-01-10 10:29:55,911 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:29:55,912 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 76 ]
+2023-01-10 10:29:57,889 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:29:57,890 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:29:57,890 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 76 ]
+2023-01-10 10:29:57,891 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:29:57,891 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 76 ]
+2023-01-10 10:29:57,892 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:29:57,892 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:29:57,894 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 76 ]
+2023-01-10 10:29:57,894 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:29:57,895 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 76 ]
+2023-01-10 10:29:58,880 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:29:58,880 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:29:58,881 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 75 ]
+2023-01-10 10:29:58,881 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:29:58,881 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 75 ]
+2023-01-10 10:29:59,869 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:29:59,870 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:29:59,870 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 74 ]
+2023-01-10 10:29:59,870 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:29:59,871 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 74 ]
+2023-01-10 10:30:00,860 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:30:00,860 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:30:00,861 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 74 ]
+2023-01-10 10:30:00,861 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:30:00,861 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 74 ]
+2023-01-10 10:30:01,850 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:30:01,852 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:30:01,853 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 76 ]
+2023-01-10 10:30:01,854 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:30:01,854 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 76 ]
+2023-01-10 10:30:02,840 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:30:02,840 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:30:02,841 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 76 ]
+2023-01-10 10:30:02,841 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:30:02,841 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 76 ]
+2023-01-10 10:30:03,830 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:30:03,832 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:30:03,833 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 76 ]
+2023-01-10 10:30:03,834 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:30:03,835 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 76 ]
+2023-01-10 10:30:04,819 [10] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:30:04,820 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:30:04,820 [10] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 75 ]
+2023-01-10 10:30:04,820 [10] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:30:04,821 [10] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 75 ]
+2023-01-10 10:30:04,879 [1] DEBUG MGT.HRM.HRP.BtHrp - Stopping HRP
+2023-01-10 10:30:04,879 [1] DEBUG MGT.HRM.HRP.BtHrp - Stopping timeout timer
+2023-01-10 10:30:04,880 [1] DEBUG MGT.HRM.HRP.BtHrp - Clearing GattCharacteristic
+2023-01-10 10:30:04,880 [1] DEBUG MGT.HRM.HRP.BtHrp - Clearing GattDeviceService
+2023-01-10 10:30:04,883 [1] DEBUG MGT.HRM.HRP.BtHrp - Resetting counters
+2023-01-10 10:30:28,707 [1] DEBUG MGT.HRM.HRP.BtHrp - Starting HRP
+2023-01-10 10:30:28,707 [1] DEBUG MGT.HRM.HRP.BtHrp - Getting GattDeviceService Polar H10 BAB23A27 with id \\?\BTHLEDevice#{0000180d-0000-1000-8000-00805f9b34fb}_Dev_MA&Polar_Electro_Oy_MO&H10_FW&5.0.0_cc5c77f95fbe#8&15b48b6e&0&000e#{6e3bb679-4372-40c8-9eaa-4509df260cd8}
+2023-01-10 10:30:29,332 [1] DEBUG MGT.HRM.HRP.BtHrp - GattDeviceService instatiated successfully
+2023-01-10 10:30:29,333 [1] DEBUG MGT.HRM.HRP.BtHrp - GattSession status = Closed, mantain connection = False, can mantain connection = False
+2023-01-10 10:30:29,333 [1] DEBUG MGT.HRM.HRP.BtHrp - Getting all GattCharacteristic...
+2023-01-10 10:30:29,340 [1] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristicsResult status Success
+2023-01-10 10:30:29,340 [1] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic 00002a37-0000-1000-8000-00805f9b34fb: description = , protection level = Plain
+2023-01-10 10:30:29,341 [1] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic 00002a38-0000-1000-8000-00805f9b34fb: description = , protection level = Plain
+2023-01-10 10:30:29,341 [1] DEBUG MGT.HRM.HRP.BtHrp - Getting HeartRateMeasurement GattCharacteristic 0
+2023-01-10 10:30:29,344 [1] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristicsResult status Success
+2023-01-10 10:30:29,344 [1] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic 00002a37-0000-1000-8000-00805f9b34fb: description = , protection level = Plain
+2023-01-10 10:30:29,344 [1] DEBUG MGT.HRM.HRP.BtHrp - Setting EncryptionRequired protection level on GattCharacteristic
+2023-01-10 10:30:29,846 [1] DEBUG MGT.HRM.HRP.BtHrp - Registering event handler onction level on GattCharacteristic
+2023-01-10 10:30:29,847 [1] DEBUG MGT.HRM.HRP.BtHrp - Reading GattCharacteristic configuration descriptor
+2023-01-10 10:30:29,852 [1] DEBUG MGT.HRM.HRP.BtHrp - Configuration successfull
+2023-01-10 10:30:29,885 [16] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:30:29,886 [16] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:30:29,886 [16] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 81 ]
+2023-01-10 10:30:29,886 [16] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:30:29,887 [16] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 81 ]
+2023-01-10 10:30:30,546 [16] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:30:30,548 [16] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:30:30,549 [16] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 81 ]
+2023-01-10 10:30:30,551 [16] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:30:30,552 [16] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 81 ]
+2023-01-10 10:30:31,626 [16] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:30:31,628 [16] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:30:31,629 [16] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 81 ]
+2023-01-10 10:30:31,630 [16] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:30:31,631 [16] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 81 ]
+2023-01-10 10:30:32,587 [16] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:30:32,588 [16] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:30:32,589 [16] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 81 ]
+2023-01-10 10:30:32,591 [16] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:30:32,592 [16] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 81 ]
+2023-01-10 10:30:33,545 [16] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:30:33,546 [16] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:30:33,546 [16] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 82 ]
+2023-01-10 10:30:33,546 [16] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:30:33,547 [16] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 82 ]
+2023-01-10 10:30:34,566 [16] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:30:34,566 [16] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:30:34,566 [16] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 82 ]
+2023-01-10 10:30:34,567 [16] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:30:34,567 [16] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 82 ]
+2023-01-10 10:30:35,587 [16] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:30:35,588 [16] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:30:35,589 [16] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 82 ]
+2023-01-10 10:30:35,591 [16] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:30:35,592 [16] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 82 ]
+2023-01-10 10:30:36,607 [16] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:30:36,608 [16] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:30:36,610 [16] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 81 ]
+2023-01-10 10:30:36,611 [16] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:30:36,612 [16] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 81 ]
+2023-01-10 10:30:37,626 [16] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:30:37,628 [16] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:30:37,629 [16] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 81 ]
+2023-01-10 10:30:37,630 [16] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:30:37,631 [16] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 81 ]
+2023-01-10 10:30:38,586 [16] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:30:38,587 [16] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:30:38,587 [16] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 81 ]
+2023-01-10 10:30:38,587 [16] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:30:38,587 [16] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 81 ]
+2023-01-10 10:30:39,545 [16] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:30:39,546 [16] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:30:39,546 [16] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 82 ]
+2023-01-10 10:30:39,547 [16] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:30:39,547 [16] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 82 ]
+2023-01-10 10:30:40,566 [16] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:30:40,566 [16] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:30:40,567 [16] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 82 ]
+2023-01-10 10:30:40,567 [16] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:30:40,567 [16] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 82 ]
+2023-01-10 10:30:41,586 [16] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:30:41,587 [16] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:30:41,588 [16] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 82 ]
+2023-01-10 10:30:41,589 [16] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:30:41,590 [16] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 82 ]
+2023-01-10 10:30:42,546 [16] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:30:42,548 [16] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:30:42,549 [16] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 81 ]
+2023-01-10 10:30:42,551 [16] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:30:42,552 [16] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 81 ]
+2023-01-10 10:30:43,565 [16] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:30:43,566 [16] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:30:43,566 [16] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 80 ]
+2023-01-10 10:30:43,567 [16] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:30:43,567 [16] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 80 ]
+2023-01-10 10:30:44,586 [16] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:30:44,587 [16] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:30:44,588 [16] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 80 ]
+2023-01-10 10:30:44,588 [16] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:30:44,589 [16] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 80 ]
+2023-01-10 10:30:45,547 [16] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:30:45,548 [16] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:30:45,548 [16] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 80 ]
+2023-01-10 10:30:45,549 [16] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:30:45,550 [16] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 80 ]
+2023-01-10 10:30:46,566 [16] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:30:46,568 [16] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:30:46,569 [16] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 79 ]
+2023-01-10 10:30:46,570 [16] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:30:46,571 [16] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 79 ]
+2023-01-10 10:30:47,586 [16] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:30:47,587 [16] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:30:47,588 [16] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 79 ]
+2023-01-10 10:30:47,589 [16] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:30:47,590 [16] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 79 ]
+2023-01-10 10:30:48,546 [16] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:30:48,548 [16] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:30:48,549 [16] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 78 ]
+2023-01-10 10:30:48,550 [16] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:30:48,551 [16] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 78 ]
+2023-01-10 10:30:49,566 [16] DEBUG MGT.HRM.HRP.BtHrp - GattCharacteristic value changed, args = Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs
+2023-01-10 10:30:49,568 [16] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP payload, data = System.Byte[]
+2023-01-10 10:30:49,569 [16] DEBUG MGT.HRM.HRP.BtHrp - Constructed HRP packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 79 ]
+2023-01-10 10:30:49,570 [16] DEBUG MGT.HRM.HRP.BtHrp - Processing HRP packets
+2023-01-10 10:30:49,571 [16] DEBUG MGT.HRM.HRP.BtHrp - Firing PacketProcessed event, packet = MGT.HRM.HRP.BtHrpPacket[ HeartRate = 79 ]
+2023-01-10 10:30:50,303 [1] DEBUG MGT.HRM.HRP.BtHrp - Stopping HRP
+2023-01-10 10:30:50,303 [1] DEBUG MGT.HRM.HRP.BtHrp - Stopping timeout timer
+2023-01-10 10:30:50,303 [1] DEBUG MGT.HRM.HRP.BtHrp - Clearing GattCharacteristic
+2023-01-10 10:30:50,304 [1] DEBUG MGT.HRM.HRP.BtHrp - Clearing GattDeviceService
+2023-01-10 10:30:50,306 [1] DEBUG MGT.HRM.HRP.BtHrp - Resetting counters
