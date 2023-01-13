@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Cardia xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WindowWidth>608</WindowWidth>
+  <WindowLocation>
+    <X>656</X>
+    <Y>383</Y>
+  </WindowLocation>
+  <ChartTime>5</ChartTime>
+  <Color>0</Color>
+  <Volume>0</Volume>
+  <PlayBeat>true</PlayBeat>
+  <PlayAlarm>true</PlayAlarm>
+  <Alarm>false</Alarm>
+  <AlarmLowThreshold>40</AlarmLowThreshold>
+  <AlarmHighThreshold>180</AlarmHighThreshold>
+  <AlarmDefuse>true</AlarmDefuse>
+  <AlarmDefuseTime>10</AlarmDefuseTime>
+  <Device>
+    <Type>BtHrp</Type>
+    <ZephyrHxM>
+      <ComPort>COM1</ComPort>
+    </ZephyrHxM>
+    <CMS50 />
+    <BtHrp>
+      <DeviceId>\\?\BTHLEDevice#{0000180d-0000-1000-8000-00805f9b34fb}_Dev_MA&amp;Polar_Electro_Oy_MO&amp;H10_FW&amp;5.0.0_cc5c77f95fbe#8&amp;15b48b6e&amp;0&amp;000e#{6e3bb679-4372-40c8-9eaa-4509df260cd8}</DeviceId>
+      <CharacteristicIndex>0</CharacteristicIndex>
+      <InitDelay>500</InitDelay>
+    </BtHrp>
+    <HRMEmulator>
+      <Min>30</Min>
+      <Max>240</Max>
+    </HRMEmulator>
+  </Device>
+  <Log>
+    <Format>CSV</Format>
+    <Address />
+    <Port>60900</Port>
+  </Log>
+  <Network>
+    <Mode>Server</Mode>
+    <Nickname>Cardia</Nickname>
+    <Port>60009</Port>
+    <Address />
+  </Network>
+</Cardia>
